@@ -49,19 +49,105 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        child: Column(
+        padding: const EdgeInsets.all(6),
+        color: const Color.fromARGB(255, 255, 255, 255),
+        child: Row(
           children: [
-            Row(
+            Column(
               children: [
-                Text("data 1"),
-                Text("data 2")
+                Container(height: 459, width: 465, padding: const EdgeInsets.all(9), margin: const EdgeInsets.all(3),
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Container(
+                    child: Column(children: [
+                      const Text("Ticket Number",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                      Text("P30018",style: TextStyle(fontSize: 90,fontWeight: FontWeight.bold,color: Colors.red),),
+                      Text("Please proceed to",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                      Text("Teller 1",style: TextStyle(fontSize: 63,fontWeight: FontWeight.bold,color: Colors.red),),
+                    ],)
+                  ),
+                ),
+                Container(height: 459, width: 465, margin: const EdgeInsets.all(3), padding: const EdgeInsets.all(9),
+                  color: const Color.fromARGB(255, 26, 90, 63),
+                  child: const Text(" Column 2"),
+                ),
               ],
             ),
-            Row(
-              children: [
-                Text("row 1"),
-                Text("Row 2")
-              ],
+            Container(
+              alignment: Alignment.topRight,
+              child: 
+                Column(
+                  children: [
+                    Row(children: [
+                      Container(height: 333, width: 333, margin: const EdgeInsets.all(3), padding: const EdgeInsets.all(9),
+                        color: const Color.fromARGB(255, 26, 90, 63),
+                        child: const Column(children: [
+                          Text("Teller 1",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style: TextStyle(fontSize: 21,),)
+                        ],),
+                      ),
+                      Container(height: 333,width: 333, margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
+                        color: const Color.fromARGB(255, 26, 90, 63),
+                        child: const Column(children: [
+                          Text("Teller 2",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style:TextStyle(fontSize: 21))
+                        ],),
+                      ),
+                      Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
+                        color: const Color.fromARGB(255, 26, 90, 63),
+                        child: const Column(children: [
+                          Text("Teller 3",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style: TextStyle(fontSize: 21),)
+                        ],),
+                      ),
+                      Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
+                        color: const Color.fromARGB(255, 26, 90, 63),
+                        child: const Column(children: [
+                          Text("Teller 4",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style: TextStyle(fontSize: 21),)
+                        ],),
+                      ),
+                    ],),
+                  Row(children: [
+                    Container(height: 333, width: 333, margin: const EdgeInsets.all(3), padding: const EdgeInsets.all(9),
+                      color: const Color.fromARGB(255, 26, 90, 63),
+                      child: const Column(
+                        children: [
+                          Text("Teller 1",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style: TextStyle(fontSize: 21,),)
+                        ],
+                      ),
+                    ),
+                    Container(height: 333,width: 333, margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
+                      color: const Color.fromARGB(255, 26, 90, 63),
+                      child: const Column(
+                        children: [
+                          Text("Teller 2",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style:TextStyle(fontSize: 21))
+                        ],
+                      ),
+                    ),
+                     Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
+                      color: const Color.fromARGB(255, 26, 90, 63),
+                      child: const Column(
+                        children: [
+                          Text("Teller 3",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                          Text("Now Serving...",style: TextStyle(fontSize: 21),)
+                        ],
+                      ),
+                    ),
+                    Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
+                    color: const Color.fromARGB(255, 26, 90, 63),
+                    child: const Column(
+                      children: [
+                        Text("Teller 4",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
+                        Text("Now Serving...",style: TextStyle(fontSize: 21),)
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+                  ],
+                )
             )
           ],
         )
