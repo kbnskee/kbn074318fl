@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kbn074318fl/components/bill_payment_1.dart';
+import 'package:kbn074318fl/components/bill_payment_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -82,21 +84,27 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: const Color.fromARGB(255, 26, 90, 63),
                         child: const Column(children: [
                           Text("Teller 1",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
-                          Text("Now Serving...",style: TextStyle(fontSize: 21,),)
+                          Text("Now Serving...",style: TextStyle(fontSize: 21,),),
+                          const SizedBox(height: 45,),
+                          BillPaymentOne()
                         ],),
                       ),
                       Container(height: 333,width: 333, margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
                         color: const Color.fromARGB(255, 26, 90, 63),
                         child: const Column(children: [
                           Text("Teller 2",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
-                          Text("Now Serving...",style:TextStyle(fontSize: 21))
+                          Text("Now Serving...",style:TextStyle(fontSize: 21)),
+                          const SizedBox(height: 45,),
+                          BillPaymentTwo()
                         ],),
                       ),
                       Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
                         color: const Color.fromARGB(255, 26, 90, 63),
                         child: const Column(children: [
                           Text("Teller 3",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
-                          Text("Now Serving...",style: TextStyle(fontSize: 21),)
+                          Text("Now Serving...",style: TextStyle(fontSize: 21),),
+                          const SizedBox(height: 45,),
+                          BillPaymentOne()
                         ],),
                       ),
                       Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
