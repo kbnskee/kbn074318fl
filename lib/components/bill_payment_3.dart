@@ -8,10 +8,10 @@ class BillPaymentThree extends StatefulWidget {
   const BillPaymentThree({super.key});
 
   @override
-  State<BillPaymentThree> createState() => _TellerOneState();
+  State<BillPaymentThree> createState() => _BillPaymentThreeState();
 }
 
-class _TellerOneState extends State<BillPaymentThree> {
+class _BillPaymentThreeState extends State<BillPaymentThree> {
   final TextEditingController _controller=TextEditingController();
   final _channel=WebSocketChannel.connect(
     Uri.parse('ws://localhost:30231/ws/queue/bill_payment_3/bill_payment_3/'),

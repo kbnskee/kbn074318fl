@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:web_socket_channel/io.dart';
 
-class BillPaymentOne extends StatefulWidget {
-  const BillPaymentOne({super.key});
+class BillPayment extends StatefulWidget {
+  const BillPayment({super.key});
 
   @override
-  State<BillPaymentOne> createState() => _BillPaymentOneState();
+  State<BillPayment> createState() => _BillPaymentState();
 }
 
-class _BillPaymentOneState extends State<BillPaymentOne> {
+class _BillPaymentState extends State<BillPayment> {
   final TextEditingController _controller=TextEditingController();
   final _channel=WebSocketChannel.connect(
     Uri.parse('ws://localhost:30231/ws/queue/bill_payment/bill_payment/'),
