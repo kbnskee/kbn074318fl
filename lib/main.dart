@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text("Teller 3",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
                           Text("Now Serving...",style: TextStyle(fontSize: 21),),
                           const SizedBox(height: 45,),
-                          BillPaymentThree()
+                          // BillPaymentThree()
                         ],),
                       ),
                       Container(height: 333,width: 333,margin: const EdgeInsets.all(3),padding: const EdgeInsets.all(9),
@@ -115,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text("Teller 4",style: TextStyle(fontSize: 36,fontWeight: FontWeight.bold),),
                           Text("Now Serving...",style: TextStyle(fontSize: 21),),
                           const SizedBox(height: 45,),
-                          BillPaymentFour()
+                          // BillPaymentFour()
                         ],),
                       ),
                     ],),
