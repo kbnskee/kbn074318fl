@@ -14,7 +14,7 @@ class BillPaymentFour extends StatefulWidget {
 class _BillPaymentFourState extends State<BillPaymentFour> {
   final TextEditingController _controller=TextEditingController();
   final _channel=WebSocketChannel.connect(
-    Uri.parse('ws://localhost:30231/ws/queue/bill_payment_4/bill_payment_4/'),
+    Uri.parse('ws://5.5.5.5:30231/ws/queue/bill_payment_4/bill_payment_4/'),
   );
 
   @override
